@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: sans-serif;
+}
+
+.loginmain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: url(../img/pupbg.jpg);
+  background-size: cover;
+}
+
+.logincontainer {
+  border: solid black;
+  background: transparent;
+  backdrop-filter: blur(20px);
+  box-shadow: 0px 0px 16px 0px rgba(233, 233, 233, 0.603);
+  border-radius: 20px;
+  color: black;
+  width: 60vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 36px;
+  text-align: center;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: whitesmoke;
+}
+
+img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  height: 50%;
+}
+
+.pic {
+  display: flex;
+  justify-content: center;
+}
+
+.logou {
+  width: 200px;
+  height: 200px;
+}
+.inputBox {
+  position: relative;
+  height: 50px;
+  margin: 30px 0;
+  padding: 5px 15px;
+}
+
+.inputBox input {
+  height: 50px;
+  width: 100%;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: whitesmoke;
+  border-radius: 5px;
+  outline: none;
+  color: black;
+  padding-bottom: 1px;
+  font-size: medium;
+}
+
+.inputBox span {
+  position: absolute;
+  left: 15px;
+  padding: 15px;
+  pointer-events: none;
+  font-size: 1em;
+  transition: 0.5s;
+}
+
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+  color: #a3a3a3;
+  font-size: 0.8em;
+  padding: 0 10px;
+  letter-spacing: 0.1em;
+  transition-property: transform, font-size, font-weight, color;
+  transition-timing-function: ease-in-out;
+  transition-duration: 200ms;
+  pointer-events: none;
+  top: 50%;
+  transform: translateY(-35%);
+  min-height: 100%;
+  display: flex;
+}
+
+.inputBox input:valid,
+.inputBox input:focus {
+  border: 1px solid #00dfc4;
+}
+
+.logincontainer .remember-forgot {
+  display: flex;
+  justify-content: space-between;
+  margin: -15px 0px 15px;
+  padding: 5px;
+  font-size: medium;
+  font-weight: 700;
+}
+
+.remember-forgot label input {
+  accent-color: white;
+  margin-right: 2px;
+  cursor: pointer;
+}
+
+.remember-forgot {
+  color: whitesmoke;
+}
+
+.remember-alignment {
+  margin: 12px;
+}
+
+.btn {
+  width: 90%;
+  height: 50px;
+  background: white;
+  border-radius: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  transition-duration: 200ms;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  background-color: white;
+  border-radius: 3rem;
+  transition: border-radius 0.2s, background-color 0.2s;
+  transition-duration: 200ms;
+}
+
+.loginbutton {
+  display: flex;
+  justify-content: center;
+}
+
+.loginregister {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-weight: 700;
+  font-size: normal;
+  color: whitesmoke;
+}
+
+.loginIcon {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.facebookIcon {
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.googleIcon {
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.bxs-envelope {
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-30%);
+  font-size: 20px;
+  color: #000; /* Initial color */
+  transition: color 0.3s ease; /* Add transition effect for color change */
+}
+
+.bx-show,
+.bx-hide {
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-30%);
+  font-size: 25px;
+  color: #000;
+  cursor: pointer;
+}
+
+.bx-show:hover,
+.bx-hide:hover {
+  color: grey; /* Change to the desired color when hovered */
+}

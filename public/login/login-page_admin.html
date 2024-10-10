@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/loginpage_cust.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>IOT Solar Power UPS Website</title>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+  </head>
+  <body>
+    <div class="loginmain">
+      <div class="logincontainer">
+        <div class="loginform">
+          <div class="pic">
+            <img class="logou" src="../assets/img/logo.png" />
+          </div>
+          <h2>Admin Login</h2>
+        </div>
+        <form id="loginform" method="POST">
+          <div class="inputBox">
+            <input
+              type="text"
+              name="username"
+              id="textInput"
+              required="required"
+            />
+            <span>Email</span>
+            <i class="bx bxs-envelope" id="envelopeIcon"></i>
+          </div>
+          <div class="inputBox">
+            <input
+              type="password"
+              name="password"
+              id="passwordInput"
+              required="required"
+            />
+            <span>Password</span>
+            <i class="bx bx-show" id="eyeIcon"></i>
+          </div>
+          <div class="remember-alignment">
+            <div class="remember-forgot">
+              <label><input type="checkbox" />Remember Password</label>
+              <a href="../forgotpass.html">Forgot Password?</a>
+            </div>
+          </div>
+          <div class="loginbutton" id="loginbutton">
+            <button class="btn" type="submit">Login</button>
+          </div>
+          <div class="loginregister">
+            <p>Don't have an account? <a href="#">Register?</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="../assets/js/login-page_admin.js"></script>
+  </body>
+</html>

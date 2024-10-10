@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: sans-serif;
+}
+.button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+}
+
+.button:hover {
+  background-color: orangered;
+  color: darkblue;
+}
+.but-con {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+.loginmain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: url(../img/pupbg.jpg);
+  background-size: cover;
+}
+
+.logincontainer {
+  border: solid black;
+  background-color: rgba(0, 0, 0, 0.041);
+  box-shadow: 0px 0px 16px 0px rgba(233, 233, 233, 0.603);
+  border-radius: 30px;
+  color: black;
+  width: 70vh;
+  height: 70%;
+}
+
+img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 20%;
+  height: 50%;
+}
+
+.pic {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+h2 {
+  font-size: 36px;
+  text-align: center;
+  padding: 5px;
+  color: whitesmoke;
+}
+
+.loginregister {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  font-weight: 700;
+  font-size: normal;
+  color: whitesmoke;
+}

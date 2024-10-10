@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="./assets/css/landing-page.css" />
+  </head>
+  <body>
+    <div class="loginmain">
+      <div class="logincontainer">
+        <div class="loginform">
+          <div class="pic">
+            <img src="./assets/img/logo.png" />
+          </div>
+          <h2>Login</h2>
+          <div class="but-con">
+            <button class="button" onclick="adminLogin()">Admin Login</button>
+            <button class="button" onclick="userLogin()">Normal Login</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function adminLogin() {
+        // Redirect to admin login page
+        window.location.href = "login/login-page_admin.html";
+      }
+
+      function userLogin() {
+        // Redirect to normal user login page
+        window.location.href = "login/login-page_cust.html";
+      }
+    </script>
+  </body>
+</html>

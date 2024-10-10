@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--========== BOX ICONS ==========-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="./css/acc-mng.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/boxicons/2.0.7/css/boxicons.min.css"
+    />
+
+    <!--========== Chart JS ==========-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Responsive sidebar submenus</title>
+  </head>
+  <body>
+    <!--========== HEADER ==========-->
+    <header class="header">
+      <div class="header__container">
+        <img src="assets/img/logo.png" alt="" class="header__img" />
+
+        <a href="#" class="header__logo"> Solar UPS</a>
+
+        <!--<div class="header__search"></div>-->
+
+        <div class="header__toggle">
+          <i class="bx bx-menu" id="header-toggle"></i>
+        </div>
+      </div>
+    </header>
+
+    <!--========== NAV ==========-->
+    <div class="nav" id="navbar">
+      <nav class="nav__container">
+        <div>
+          <a href="#" class="nav__link nav__logo">
+            <i class="bx bxs-sun nav__icon_sun"></i>
+            <span class="nav__logo-name">UPSolar</span>
+          </a>
+
+          <div class="nav__list">
+            <div class="nav__items">
+              <h3 class="nav__subtitle">Profile</h3>
+
+              <a href="../home/home-admin.html" class="nav__link active">
+                <i class="bx bx-home nav__icon"></i>
+                <span class="nav__name">Home</span>
+              </a>
+
+              <div class="nav__dropdown">
+                <a href="" class="nav__link">
+                  <i class="bx bx-user nav__icon"></i>
+                  <span class="nav__name">Profile</span>
+                  <i
+                    class="bx bx-chevron-down nav__icon nav__dropdown-icon"
+                  ></i>
+                </a>
+                <div class="nav__dropdown-collapse">
+                  <div class="nav__dropdown-content">
+                    <a
+                      href="./assets/account-management.html"
+                      class="nav__dropdown-item"
+                      >My Account</a
+                    >
+                    <a
+                      href="./account-management.html"
+                      class="nav__dropdown-item"
+                      >User Accounts</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="nav__link">
+                <i class="bx bx-message-rounded nav__icon"></i>
+                <span class="nav__name">Messages</span>
+              </a>
+            </div>
+            <div class="nav__items">
+              <h3 class="nav__subtitle">Menu</h3>
+              <div class="nav__dropdown">
+                <a href="#" class="nav__link">
+                  <i class="bx bx-bell nav__icon"></i>
+                  <span class="nav__name">Notifications</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="../index.html" class="nav__link nav__logout">
+          <i class="bx bx-log-out nav__icon"></i>
+          <span class="nav__name">Log Out</span>
+        </a>
+      </nav>
+    </div>
+
+    <!--========== CONTENTS ==========-->
+    <main>
+      <div class="details">
+        <div class="recentOrders">
+          <div class="cardHeader">
+            <h2>Accounts</h2>
+            <div class="search">
+              <label>
+                <input type="text" placeholder="Search here" />
+                <ion-icon name="search-outline"></ion-icon>
+              </label>
+            </div>
+            <div class="btn-contain">
+              <a href="#" class="btn" id="refreshBtn">Refresh</a>
+              <a href="#" class="btn" id="addUserBtn">Add User</a>
+              <a href="#" class="btn">View All</a>
+            </div>
+          </div>
+
+          <table id="userTable">
+            <thead>
+              <tr>
+                <th>Email</th>
+                <th>Display Name</th>
+                <th>Password</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="userList"></tbody>
+          </table>
+        </div>
+      </div>
+      <div class="overlay" id="overlay">
+        <div class="overlay-content">
+          <h2>Add User</h2>
+          <form id="addUserForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <label for="displayName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required />
+            <label for="displayName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required />
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+            <button type="submit">Add User</button>
+          </form>
+          <button id="closeOverlay">Close</button>
+        </div>
+      </div>
+    </main>
+
+    <!--========== Scripts ==========-->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./js/acc-mng.js"></script>
+    <script src="./js/sidebar.js"></script>
+  </body>
+</html>
