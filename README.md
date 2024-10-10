@@ -6,3 +6,4 @@ Don't forget to join the channel for more videos like this. [Bedimcode](https://
 
 ![Responsive Sidebar Submenu](/preview.png)
 # Thesis_Fin
+# Fpascual03-THESIS-IOT-INTEGRATED-SOLAR-POWERED-UNINTERRUPTIBLE-POWER-SUPPLY-IN-PUP
